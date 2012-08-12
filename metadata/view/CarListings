@@ -28,66 +28,11 @@
             "userConfig": {
                 "layout|flex": 1,
                 "designer|userClassName": "MyGridPanel",
-                "title": null
+                "title": null,
+                "store": "CarDataStore"
             },
             "designerId": "a5a407e7-18fa-4914-918f-2c5b6789392d",
             "cn": [
-                {
-                    "type": "gridcolumn",
-                    "reference": {
-                        "name": "columns",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "designer|userClassName": "MyColumn",
-                        "dataIndex": "string",
-                        "text": "String"
-                    },
-                    "designerId": "119acfec-3bac-4ff2-a475-c9accd38bbcf"
-                },
-                {
-                    "type": "numbercolumn",
-                    "reference": {
-                        "name": "columns",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "designer|userClassName": "MyNumberColumn",
-                        "dataIndex": "number",
-                        "text": "Number"
-                    },
-                    "designerId": "ed8d026f-62e3-43a5-952b-bf47fdbf1b51"
-                },
-                {
-                    "type": "datecolumn",
-                    "reference": {
-                        "name": "columns",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "designer|userClassName": "MyDateColumn",
-                        "dataIndex": "date",
-                        "text": "Date"
-                    },
-                    "designerId": "e4c92ad7-5d45-4202-9eab-c80a49321f83"
-                },
-                {
-                    "type": "booleancolumn",
-                    "reference": {
-                        "name": "columns",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "designer|userClassName": "MyBooleanColumn",
-                        "dataIndex": "bool",
-                        "text": "Boolean"
-                    },
-                    "designerId": "597cc4ee-1148-44ee-9259-212c7468d3ac"
-                },
                 {
                     "type": "gridview",
                     "reference": {
@@ -99,6 +44,76 @@
                         "designer|userClassName": "MyGridView"
                     },
                     "designerId": "78c707bc-3756-4dfe-bfc3-e79324bf3b1b"
+                },
+                {
+                    "type": "gridcolumn",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyColumn1",
+                        "dataIndex": "manufacturer",
+                        "text": "Manufacturer"
+                    },
+                    "designerId": "aa12be43-ba64-4553-9672-d4ce69212624"
+                },
+                {
+                    "type": "gridcolumn",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyColumn2",
+                        "dataIndex": "model",
+                        "text": "Model"
+                    },
+                    "designerId": "048a726e-a37d-425b-b474-5cf54b65c09f"
+                },
+                {
+                    "type": "gridcolumn",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyColumn3",
+                        "dataIndex": "price",
+                        "text": "Price"
+                    },
+                    "designerId": "d4365dc6-c235-426c-8225-3e5754579906"
+                },
+                {
+                    "type": "gridcolumn",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyColumn4",
+                        "dataIndex": "wiki",
+                        "text": "Wiki"
+                    },
+                    "designerId": "07eaf801-329a-4c01-a1ea-1ad051569935"
+                },
+                {
+                    "type": "gridcolumn",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyColumn5",
+                        "dataIndex": "quality",
+                        "text": "Quality"
+                    },
+                    "designerId": "3c22bf8d-b26a-49ee-8339-948b2b70a48e"
                 }
             ]
         }

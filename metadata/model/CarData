@@ -1,0 +1,80 @@
+{
+    "type": "datamodel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "CarData"
+    },
+    "id": "ExtBox1-ext-gen4108",
+    "designerId": "44284846-393f-4336-9e37-fe0ed78e1e2a",
+    "cn": [
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyField",
+                "name": "manufacturer"
+            },
+            "designerId": "1f2a373a-5542-45c1-a073-a19e2f24e573"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyField1",
+                "name": "model"
+            },
+            "designerId": "9457f1d9-cb15-48a2-929e-aba43749eb39"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyField2",
+                "name": "price"
+            },
+            "designerId": "0bdbd53c-a3a3-42e5-af2c-6b664d2f1fa8"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyField3",
+                "name": "wiki"
+            },
+            "designerId": "5772beaa-658d-478c-a8f4-a485e9a4f30e"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyField4",
+                "name": "quality"
+            },
+            "designerId": "0846e5f8-7b72-434a-a64c-cb3f88af72d1"
+        }
+    ]
+}

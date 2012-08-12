@@ -33,31 +33,37 @@ Ext.define('MyApp.view.CarListings', {
                 {
                     xtype: 'gridpanel',
                     flex: 1,
+                    store: 'CarDataStore',
+                    viewConfig: {
+
+                    },
                     columns: [
                         {
                             xtype: 'gridcolumn',
-                            dataIndex: 'string',
-                            text: 'String'
+                            dataIndex: 'manufacturer',
+                            text: 'Manufacturer'
                         },
                         {
-                            xtype: 'numbercolumn',
-                            dataIndex: 'number',
-                            text: 'Number'
+                            xtype: 'gridcolumn',
+                            dataIndex: 'model',
+                            text: 'Model'
                         },
                         {
-                            xtype: 'datecolumn',
-                            dataIndex: 'date',
-                            text: 'Date'
+                            xtype: 'gridcolumn',
+                            dataIndex: 'price',
+                            text: 'Price'
                         },
                         {
-                            xtype: 'booleancolumn',
-                            dataIndex: 'bool',
-                            text: 'Boolean'
+                            xtype: 'gridcolumn',
+                            dataIndex: 'wiki',
+                            text: 'Wiki'
+                        },
+                        {
+                            xtype: 'gridcolumn',
+                            dataIndex: 'quality',
+                            text: 'Quality'
                         }
-                    ],
-                    viewConfig: {
-
-                    }
+                    ]
                 }
             ]
         });

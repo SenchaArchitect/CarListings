@@ -28,15 +28,35 @@
                 "metadata/resource/Library"
             ],
             "className": "Library"
+        },
+        "0315c038-557a-4e0a-8263-df261c02f018": {
+            "paths": [
+                "metadata/store/CarDataStore",
+                "app/store/override/CarDataStore.js",
+                "app/store/CarDataStore.js"
+            ],
+            "className": "CarDataStore"
+        },
+        "44284846-393f-4336-9e37-fe0ed78e1e2a": {
+            "paths": [
+                "metadata/model/CarData",
+                "app/model/override/CarData.js",
+                "app/model/CarData.js"
+            ],
+            "className": "CarData"
         }
     },
     "viewOrderMap": {
         "view": [
             "fa6a13d2-be29-4bce-9bf8-7087e3a9c6ba"
         ],
-        "store": [],
+        "store": [
+            "0315c038-557a-4e0a-8263-df261c02f018"
+        ],
         "controller": [],
-        "model": [],
+        "model": [
+            "44284846-393f-4336-9e37-fe0ed78e1e2a"
+        ],
         "resource": [
             "67363d08-999e-4648-b11d-5d9fe657da91"
         ],

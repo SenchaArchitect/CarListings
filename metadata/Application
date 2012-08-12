@@ -6,6 +6,12 @@
     },
     "codeClass": null,
     "userConfig": {
+        "models": [
+            "CarData"
+        ],
+        "stores": [
+            "CarDataStore"
+        ],
         "views": [
             "CarListings"
         ],
