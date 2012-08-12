@@ -12,7 +12,7 @@ CarListings is a simple Ext JS 4.x application that illustrates the use of data 
 
 Learn how to build it here; [tutorial](http://docs.sencha.com/architect/2-1/#!/guide/first_desktop_app).
 
-<img width=400 src="http://docs.sencha.com/architect/2-0/guides/first_desktop_app/screen.png" />
+<img width=400 src="http://cloud.github.com/downloads/SenchaArchitect/CarListings/screen.png" />
 
 ##### Latest Archive
 [CityBars.xda (build: 569)](https://github.com/downloads/SenchaArchitect/CarListings/CarListings.xda) - Architect archive
