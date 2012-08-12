@@ -71,6 +71,19 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "MyField5",
+                "name": "img"
+            },
+            "designerId": "4a74bdf3-05c6-48b4-871c-159e60950faf"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
                 "designer|userClassName": "MyField4",
                 "name": "quality"
             },

@@ -17,8 +17,8 @@ Ext.define('MyApp.view.CarListings', {
     extend: 'Ext.panel.Panel',
 
     frame: true,
-    height: 250,
-    width: 400,
+    height: 527,
+    width: 413,
     layout: {
         align: 'stretch',
         type: 'vbox'
@@ -36,6 +36,12 @@ Ext.define('MyApp.view.CarListings', {
                     store: 'CarDataStore',
                     viewConfig: {
 
+                    },
+                    listeners: {
+                        select: {
+                            fn: me.onGridpanelSelect,
+                            scope: me
+                        }
                     },
                     columns: [
                         {
@@ -60,15 +66,42 @@ Ext.define('MyApp.view.CarListings', {
                         },
                         {
                             xtype: 'gridcolumn',
+                            dataIndex: 'img',
+                            text: 'Img'
+                        },
+                        {
+                            xtype: 'gridcolumn',
                             dataIndex: 'quality',
                             text: 'Quality'
                         }
                     ]
+                },
+                {
+                    xtype: 'panel',
+                    flex: 1,
+                    itemId: 'detailPanel',
+                    tpl: [
+                        '<img src="data/{img}" style="float: right" />',
+                        'Manufacturer: {manufacturer}<br>',
+                        'Model: <a href="{wiki}" target="_blank">{model}</a><br>',
+                        'Price: {price:usMoney}<br>'
+                    ],
+                    title: 'My Panel'
                 }
             ]
         });
 
         me.callParent(arguments);
+    },
+
+    onGridpanelSelect: function(selModel, record, index, options) {
+        // grab a reference to the detailPanel via itemId
+        // the # in front of the id indicates that we would like to grab a reference by
+        var detailPanel = this.child('#detailPanel');
+        // update the detailPanel with data
+        // this will trigger the tpl to become updates
+        detailPanel.update(record.data);
+
     }
 
 });

@@ -30,6 +30,9 @@ Ext.define('MyApp.model.CarData', {
             name: 'wiki'
         },
         {
+            name: 'img'
+        },
+        {
             name: 'quality'
         }
     ]
