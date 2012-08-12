@@ -7,10 +7,12 @@
     "codeClass": null,
     "userConfig": {
         "models": [
-            "CarData"
+            "CarData",
+            "CarChart"
         ],
         "stores": [
-            "CarDataStore"
+            "CarDataStore",
+            "CarChartStore"
         ],
         "views": [
             "CarListings"

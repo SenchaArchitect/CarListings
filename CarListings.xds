@@ -44,6 +44,22 @@
                 "app/model/CarData.js"
             ],
             "className": "CarData"
+        },
+        "46782a72-f446-46f1-9b63-5a9f1dc44a0a": {
+            "paths": [
+                "metadata/store/CarChartStore",
+                "app/store/override/CarChartStore.js",
+                "app/store/CarChartStore.js"
+            ],
+            "className": "CarChartStore"
+        },
+        "5facafe4-e1fe-49da-a9f1-20529581bc87": {
+            "paths": [
+                "metadata/model/CarChart",
+                "app/model/override/CarChart.js",
+                "app/model/CarChart.js"
+            ],
+            "className": "CarChart"
         }
     },
     "viewOrderMap": {
@@ -51,11 +67,13 @@
             "fa6a13d2-be29-4bce-9bf8-7087e3a9c6ba"
         ],
         "store": [
-            "0315c038-557a-4e0a-8263-df261c02f018"
+            "0315c038-557a-4e0a-8263-df261c02f018",
+            "46782a72-f446-46f1-9b63-5a9f1dc44a0a"
         ],
         "controller": [],
         "model": [
-            "44284846-393f-4336-9e37-fe0ed78e1e2a"
+            "44284846-393f-4336-9e37-fe0ed78e1e2a",
+            "5facafe4-e1fe-49da-a9f1-20529581bc87"
         ],
         "resource": [
             "67363d08-999e-4648-b11d-5d9fe657da91"

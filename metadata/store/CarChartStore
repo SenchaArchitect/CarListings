@@ -1,0 +1,15 @@
+{
+    "type": "store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "CarChartStore",
+        "storeId": "MyStore",
+        "model": "CarChart"
+    },
+    "id": "ExtBox1-ext-gen3530",
+    "designerId": "46782a72-f446-46f1-9b63-5a9f1dc44a0a"
+}

@@ -10,8 +10,8 @@
         "designer|userClassName": "CarListings",
         "designer|initialView": true,
         "frame": true,
-        "height": 527,
-        "width": 413,
+        "height": 773,
+        "width": 518,
         "layout": "vbox",
         "title": "Car Listing"
     },
@@ -56,13 +56,20 @@
                         "designer|userClassName": "onGridpanelSelect",
                         "fn": "onGridpanelSelect",
                         "implHandler": [
-                            " // grab a reference to the detailPanel via itemId",
-                            " // the # in front of the id indicates that we would like to grab a reference by",
-                            " var detailPanel = this.child('#detailPanel');",
-                            " // update the detailPanel with data",
-                            " // this will trigger the tpl to become updates",
-                            " detailPanel.update(record.data);",
-                            ""
+                            "// grab a reference to the detailPanel via itemId",
+                            "// the # in front of the id indicates that we would like to grab a reference by",
+                            "var detailPanel = this.child('#detailPanel');",
+                            "// update the detailPanel with data",
+                            "// this will trigger the tpl to become updates",
+                            "detailPanel.update(record.data);",
+                            "",
+                            "// grab a reference to the qualityChart, notice we use down here instead of child",
+                            "// because down will go down the container hierarchy at any depth and child will",
+                            "// only retrieve direct children",
+                            "var chart = this.down('#qualityChart');",
+                            "// get the quality field out of this record",
+                            "var qualityData = record.get('quality');",
+                            "chart.store.loadData(qualityData);"
                         ],
                         "name": "select",
                         "scope": "me"
@@ -164,9 +171,10 @@
             "codeClass": null,
             "userConfig": {
                 "layout|flex": 1,
+                "layout|margins": "5 0 0 0",
                 "designer|userClassName": "MyPanel1",
                 "itemId": "detailPanel",
-                "title": "My Panel"
+                "title": null
             },
             "designerId": "289f4b72-3f68-4351-8386-3d61a4680ef8",
             "cn": [
@@ -188,6 +196,109 @@
                         "designer|displayName": "tpl"
                     },
                     "designerId": "aa310fed-b45f-4f77-894c-b9f51ea19ba3"
+                }
+            ]
+        },
+        {
+            "type": "panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 1,
+                "layout|margins": "5 0 0 0",
+                "designer|userClassName": "MyPanel2",
+                "layout": "fit",
+                "title": null
+            },
+            "designerId": "fd004ff7-50f7-4652-ae45-c59470b44c88",
+            "cn": [
+                {
+                    "type": "chart",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "ColumnChart1",
+                        "height": null,
+                        "itemId": "qualityChart",
+                        "width": null,
+                        "animate": [
+                            "true"
+                        ],
+                        "insetPadding": 20,
+                        "store": "CarChartStore"
+                    },
+                    "designerId": "34b5e744-19eb-4105-ac76-65b9c446f4cc",
+                    "iconCls": "icon-column-chart",
+                    "cn": [
+                        {
+                            "type": "categoryaxis",
+                            "reference": {
+                                "name": "axes",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyCategoryAxis",
+                                "fields": [
+                                    "name"
+                                ],
+                                "position": "bottom",
+                                "title": "Quality"
+                            },
+                            "designerId": "212b4d24-508c-4ccb-829f-86b639749445"
+                        },
+                        {
+                            "type": "numericaxis",
+                            "reference": {
+                                "name": "axes",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyNumericAxis",
+                                "fields": [
+                                    "rating"
+                                ],
+                                "majorTickSteps": 4,
+                                "minorTickSteps": null,
+                                "position": "left",
+                                "title": "Score",
+                                "maximum": 5,
+                                "minimum": 0
+                            },
+                            "designerId": "798cb167-3cf9-4173-b6bd-8747b7d1a245"
+                        },
+                        {
+                            "type": "columnseries",
+                            "reference": {
+                                "name": "series",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "MyColumnSeries",
+                                "label": [
+                                    " {",
+                                    "     display: 'insideEnd',",
+                                    "     field: 'rating',",
+                                    "     color: '#333',",
+                                    "     \"text-anchor\": 'middle'",
+                                    " }"
+                                ],
+                                "xField": "name",
+                                "yField": [
+                                    "rating"
+                                ]
+                            },
+                            "designerId": "f4dfa8fe-667e-4d2a-8d4c-d45ad0a40029"
+                        }
+                    ]
                 }
             ]
         }

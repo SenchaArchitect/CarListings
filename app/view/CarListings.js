@@ -17,8 +17,8 @@ Ext.define('MyApp.view.CarListings', {
     extend: 'Ext.panel.Panel',
 
     frame: true,
-    height: 527,
-    width: 413,
+    height: 773,
+    width: 518,
     layout: {
         align: 'stretch',
         type: 'vbox'
@@ -79,14 +79,67 @@ Ext.define('MyApp.view.CarListings', {
                 {
                     xtype: 'panel',
                     flex: 1,
+                    margins: '5 0 0 0',
                     itemId: 'detailPanel',
                     tpl: [
                         '<img src="data/{img}" style="float: right" />',
                         'Manufacturer: {manufacturer}<br>',
                         'Model: <a href="{wiki}" target="_blank">{model}</a><br>',
                         'Price: {price:usMoney}<br>'
-                    ],
-                    title: 'My Panel'
+                    ]
+                },
+                {
+                    xtype: 'panel',
+                    flex: 1,
+                    margins: '5 0 0 0',
+                    layout: {
+                        type: 'fit'
+                    },
+                    items: [
+                        {
+                            xtype: 'chart',
+                            itemId: 'qualityChart',
+                            animate: true,
+                            insetPadding: 20,
+                            store: 'CarChartStore',
+                            axes: [
+                                {
+                                    type: 'Category',
+                                    fields: [
+                                        'name'
+                                    ],
+                                    position: 'bottom',
+                                    title: 'Quality'
+                                },
+                                {
+                                    type: 'Numeric',
+                                    fields: [
+                                        'rating'
+                                    ],
+                                    majorTickSteps: 4,
+                                    position: 'left',
+                                    title: 'Score',
+                                    maximum: 5,
+                                    minimum: 0
+                                }
+                            ],
+                            series: [
+                                {
+                                    type: 'column',
+                                    label: {
+                                        display: 'insideEnd',
+                                        field: 'rating',
+                                        color: '#333',
+                                        'text-anchor': 'middle'
+                                    },
+                                    xField: 'name',
+                                    yField: [
+                                        'rating'
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         });
@@ -102,6 +155,13 @@ Ext.define('MyApp.view.CarListings', {
         // this will trigger the tpl to become updates
         detailPanel.update(record.data);
 
+        // grab a reference to the qualityChart, notice we use down here instead of child
+        // because down will go down the container hierarchy at any depth and child will
+        // only retrieve direct children
+        var chart = this.down('#qualityChart');
+        // get the quality field out of this record
+        var qualityData = record.get('quality');
+        chart.store.loadData(qualityData);
     }
 
 });
