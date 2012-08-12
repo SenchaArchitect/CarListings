@@ -1,0 +1,47 @@
+{
+    "name": "CarListings",
+    "settings": {
+        "urlPrefix": "http://localhost/CarListings/",
+        "spacesToIndent": 4,
+        "exportPath": "",
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": false
+    },
+    "xdsVersion": "2.0.0",
+    "xdsBuild": 569,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000495,
+    "framework": "ext41",
+    "topInstanceFileMap": {
+        "fa6a13d2-be29-4bce-9bf8-7087e3a9c6ba": {
+            "paths": [
+                "metadata/view/MyPanel",
+                "app/view/override/MyPanel.js",
+                "app/view/MyPanel.js",
+                "app/view/Viewport.js"
+            ],
+            "className": "MyPanel"
+        },
+        "67363d08-999e-4648-b11d-5d9fe657da91": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "fa6a13d2-be29-4bce-9bf8-7087e3a9c6ba"
+        ],
+        "store": [],
+        "controller": [],
+        "model": [],
+        "resource": [
+            "67363d08-999e-4648-b11d-5d9fe657da91"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}
