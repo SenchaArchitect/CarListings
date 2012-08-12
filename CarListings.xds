@@ -16,12 +16,12 @@
     "topInstanceFileMap": {
         "fa6a13d2-be29-4bce-9bf8-7087e3a9c6ba": {
             "paths": [
-                "metadata/view/MyPanel",
-                "app/view/override/MyPanel.js",
-                "app/view/MyPanel.js",
+                "metadata/view/CarListings",
+                "app/view/override/CarListings.js",
+                "app/view/CarListings.js",
                 "app/view/Viewport.js"
             ],
-            "className": "MyPanel"
+            "className": "CarListings"
         },
         "67363d08-999e-4648-b11d-5d9fe657da91": {
             "paths": [

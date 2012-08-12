@@ -14,9 +14,9 @@
  */
 
 Ext.define('MyApp.view.Viewport', {
-    extend: 'MyApp.view.MyPanel',
+    extend: 'MyApp.view.CarListings',
     renderTo: Ext.getBody(),
     requires: [
-        'MyApp.view.MyPanel'
+        'MyApp.view.CarListings'
     ]
 });
