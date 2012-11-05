@@ -234,7 +234,6 @@
                         "store": "CarChartStore"
                     },
                     "designerId": "34b5e744-19eb-4105-ac76-65b9c446f4cc",
-                    "iconCls": "icon-column-chart",
                     "cn": [
                         {
                             "type": "categoryaxis",
