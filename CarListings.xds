@@ -1,7 +1,7 @@
 {
     "name": "CarListings",
     "settings": {
-        "urlPrefix": "http://localhost/sandbox/CarListing/",
+        "urlPrefix": "http://localhost/sandbox/CarListings/",
         "spacesToIndent": 4,
         "exportPath": "",
         "sdkPath": "",
@@ -9,10 +9,10 @@
         "genTimestamps": false,
         "cacheBust": false
     },
-    "xdsVersion": "2.1.0",
-    "xdsBuild": 670,
+    "xdsVersion": "2.2.0",
+    "xdsBuild": 0,
     "schemaVersion": 1,
-    "upgradeVersion": 210000000498,
+    "upgradeVersion": 210000000499,
     "framework": "ext41",
     "topInstanceFileMap": {
         "fa6a13d2-be29-4bce-9bf8-7087e3a9c6ba": {

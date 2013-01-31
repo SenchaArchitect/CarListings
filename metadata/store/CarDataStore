@@ -6,16 +6,15 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "CarDataStore",
         "autoLoad": true,
+        "model": "CarData",
         "storeId": "MyJsonStore",
-        "model": "CarData"
+        "designer|userClassName": "CarDataStore"
     },
-    "id": "ExtBox1-ext-gen5045",
     "designerId": "0315c038-557a-4e0a-8263-df261c02f018",
     "cn": [
         {
-            "type": "ajaxproxy",
+            "type": "Ext.data.proxy.Ajax",
             "reference": {
                 "name": "proxy",
                 "type": "object"
@@ -28,15 +27,15 @@
             "designerId": "b14e40ae-0e6c-4385-99f1-6f74052c2325",
             "cn": [
                 {
-                    "type": "jsonreader",
+                    "type": "Ext.data.reader.Json",
                     "reference": {
                         "name": "reader",
                         "type": "object"
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "designer|userClassName": "MyJsonReader",
-                        "root": "data"
+                        "root": "data",
+                        "designer|userClassName": "MyJsonReader"
                     },
                     "designerId": "84c9270c-599b-4349-aab1-978aa0607fb3"
                 }

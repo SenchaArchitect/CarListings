@@ -1,5 +1,5 @@
 {
-    "type": "panel",
+    "type": "Ext.panel.Panel",
     "reference": {
         "name": "items",
         "type": "array"
@@ -7,19 +7,18 @@
     "codeClass": null,
     "userConfig": {
         "container|align": "stretch",
-        "designer|userClassName": "CarListings",
-        "designer|initialView": true,
         "frame": true,
         "height": 773,
         "width": 518,
+        "designer|userClassName": "CarListings",
+        "designer|initialView": true,
         "layout": "vbox",
         "title": "Car Listing"
     },
-    "id": "ExtBox1-ext-gen1844",
     "designerId": "fa6a13d2-be29-4bce-9bf8-7087e3a9c6ba",
     "cn": [
         {
-            "type": "gridpanel",
+            "type": "Ext.grid.Panel",
             "reference": {
                 "name": "items",
                 "type": "array"
@@ -34,7 +33,7 @@
             "designerId": "a5a407e7-18fa-4914-918f-2c5b6789392d",
             "cn": [
                 {
-                    "type": "gridview",
+                    "type": "Ext.grid.View",
                     "reference": {
                         "name": "viewConfig",
                         "type": "object"
@@ -77,7 +76,7 @@
                     "designerId": "17b7f55e-d4f6-4018-832f-02efddf871dc"
                 },
                 {
-                    "type": "gridcolumn",
+                    "type": "Ext.grid.column.Column",
                     "reference": {
                         "name": "columns",
                         "type": "array"
@@ -91,7 +90,7 @@
                     "designerId": "6b7f7bfe-bfdf-4092-8675-e172f98aef7d"
                 },
                 {
-                    "type": "gridcolumn",
+                    "type": "Ext.grid.column.Column",
                     "reference": {
                         "name": "columns",
                         "type": "array"
@@ -105,7 +104,7 @@
                     "designerId": "cb4486c2-f5d9-44d2-ae98-a9213efca08b"
                 },
                 {
-                    "type": "gridcolumn",
+                    "type": "Ext.grid.column.Column",
                     "reference": {
                         "name": "columns",
                         "type": "array"
@@ -119,7 +118,7 @@
                     "designerId": "cd5ec702-401d-4363-8ea1-72ccda575f0f"
                 },
                 {
-                    "type": "gridcolumn",
+                    "type": "Ext.grid.column.Column",
                     "reference": {
                         "name": "columns",
                         "type": "array"
@@ -133,7 +132,7 @@
                     "designerId": "57c03967-b5a9-4742-a0da-6dc876f4f63e"
                 },
                 {
-                    "type": "gridcolumn",
+                    "type": "Ext.grid.column.Column",
                     "reference": {
                         "name": "columns",
                         "type": "array"
@@ -147,7 +146,7 @@
                     "designerId": "30e1bb89-13d1-486a-8c9b-f72d0b257447"
                 },
                 {
-                    "type": "gridcolumn",
+                    "type": "Ext.grid.column.Column",
                     "reference": {
                         "name": "columns",
                         "type": "array"
@@ -163,7 +162,7 @@
             ]
         },
         {
-            "type": "panel",
+            "type": "Ext.panel.Panel",
             "reference": {
                 "name": "items",
                 "type": "array"
@@ -172,14 +171,14 @@
             "userConfig": {
                 "layout|flex": 1,
                 "layout|margins": "5 0 0 0",
-                "designer|userClassName": "MyPanel1",
                 "itemId": "detailPanel",
+                "designer|userClassName": "MyPanel1",
                 "title": null
             },
             "designerId": "289f4b72-3f68-4351-8386-3d61a4680ef8",
             "cn": [
                 {
-                    "type": "template",
+                    "type": "Ext.XTemplate",
                     "reference": {
                         "name": "tpl",
                         "type": "object"
@@ -200,7 +199,7 @@
             ]
         },
         {
-            "type": "panel",
+            "type": "Ext.panel.Panel",
             "reference": {
                 "name": "items",
                 "type": "array"
@@ -216,17 +215,17 @@
             "designerId": "fd004ff7-50f7-4652-ae45-c59470b44c88",
             "cn": [
                 {
-                    "type": "chart",
+                    "type": "Ext.chart.Chart",
                     "reference": {
                         "name": "items",
                         "type": "array"
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "designer|userClassName": "ColumnChart1",
                         "height": null,
                         "itemId": "qualityChart",
                         "width": null,
+                        "designer|userClassName": "ColumnChart1",
                         "animate": [
                             "true"
                         ],
@@ -236,34 +235,33 @@
                     "designerId": "34b5e744-19eb-4105-ac76-65b9c446f4cc",
                     "cn": [
                         {
-                            "type": "categoryaxis",
+                            "type": "Ext.chart.axis.Category",
                             "reference": {
                                 "name": "axes",
                                 "type": "array"
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "designer|userClassName": "MyCategoryAxis",
                                 "fields": [
                                     "name"
                                 ],
-                                "position": "bottom",
+                                "designer|userClassName": "MyCategoryAxis",
                                 "title": "Quality"
                             },
                             "designerId": "212b4d24-508c-4ccb-829f-86b639749445"
                         },
                         {
-                            "type": "numericaxis",
+                            "type": "Ext.chart.axis.Numeric",
                             "reference": {
                                 "name": "axes",
                                 "type": "array"
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "designer|userClassName": "MyNumericAxis",
                                 "fields": [
                                     "rating"
                                 ],
+                                "designer|userClassName": "MyNumericAxis",
                                 "majorTickSteps": 4,
                                 "minorTickSteps": null,
                                 "position": "left",
@@ -274,14 +272,13 @@
                             "designerId": "798cb167-3cf9-4173-b6bd-8747b7d1a245"
                         },
                         {
-                            "type": "columnseries",
+                            "type": "Ext.chart.series.Column",
                             "reference": {
                                 "name": "series",
                                 "type": "array"
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "designer|userClassName": "MyColumnSeries",
                                 "label": [
                                     " {",
                                     "     display: 'insideEnd',",
@@ -290,6 +287,7 @@
                                     "     \"text-anchor\": 'middle'",
                                     " }"
                                 ],
+                                "designer|userClassName": "MyColumnSeries",
                                 "xField": "name",
                                 "yField": [
                                     "rating"
