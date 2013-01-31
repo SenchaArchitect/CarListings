@@ -15,7 +15,7 @@ Learn how to build it here; [tutorial](http://docs.sencha.com/architect/2-1/#!/g
 <img width=400 src="http://cloud.github.com/downloads/SenchaArchitect/CarListings/screen.png" />
 
 ##### Latest Archive
-[CityBars.xda (build: 569)](https://github.com/downloads/SenchaArchitect/CarListings/CarListings.xda) - Architect archive
+[CarListings.xda (build: 569)](http://cdn.sencha.com/architect/examples/carlistings/CarListings.xda) - Architect archive
 
 ##### Accompanying Data Files
-[data.zip](https://github.com/downloads/SenchaArchitect/CarListings/data.zip) - Data Files
+[data.zip](http://cdn.sencha.com/architect/examples/carlistings/data.zip) - Data Files
