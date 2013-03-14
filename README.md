@@ -14,7 +14,7 @@ Learn how to build it here; [tutorial](http://docs.sencha.com/architect/2-1/#!/g
 
 <img width=400 src="http://cloud.github.com/downloads/SenchaArchitect/CarListings/screen.png" />
 
-##### Latest Archive
+##### Archives for previous Architect versions
 [CarListings.xda (build: 569)](http://cdn.sencha.com/architect/examples/carlistings/CarListings.xda) - Architect archive
 
 ##### Accompanying Data Files
