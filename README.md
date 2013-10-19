@@ -10,7 +10,7 @@ CarListings is a simple Ext JS 4.x application that illustrates the use of data 
 - Event Bindings
 - Models and Stores
 
-Learn how to build it here; [tutorial](http://docs.sencha.com/architect/2-1/#!/guide/first_desktop_app).
+Learn how to build it here; [tutorial](http://docs.sencha.com/architect/#!/guide/first_desktop_app).
 
 <img width=400 src="http://cloud.github.com/downloads/SenchaArchitect/CarListings/screen.png" />
 
