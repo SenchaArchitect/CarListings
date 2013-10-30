@@ -249,6 +249,7 @@
                                 "maximum": 5,
                                 "minimum": 0,
                                 "minorTickSteps": null,
+                                "position": "bottom",
                                 "title": "Score"
                             },
                             "designerId": "798cb167-3cf9-4173-b6bd-8747b7d1a245"
