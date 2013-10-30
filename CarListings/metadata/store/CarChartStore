@@ -6,9 +6,9 @@
     },
     "codeClass": null,
     "userConfig": {
+        "designer|userClassName": "CarChartStore",
         "model": "CarChart",
-        "storeId": "MyStore",
-        "designer|userClassName": "CarChartStore"
+        "storeId": "MyStore"
     },
     "designerId": "46782a72-f446-46f1-9b63-5a9f1dc44a0a"
 }

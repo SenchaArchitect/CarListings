@@ -7,9 +7,9 @@
     "codeClass": null,
     "userConfig": {
         "autoLoad": true,
+        "designer|userClassName": "CarDataStore",
         "model": "CarData",
-        "storeId": "MyJsonStore",
-        "designer|userClassName": "CarDataStore"
+        "storeId": "MyJsonStore"
     },
     "designerId": "0315c038-557a-4e0a-8263-df261c02f018",
     "cn": [
@@ -21,7 +21,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyAjaxProxy",
                 "url": "data/cars.json"
             },
             "designerId": "b14e40ae-0e6c-4385-99f1-6f74052c2325",
@@ -34,8 +33,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "root": "data",
-                        "designer|userClassName": "MyJsonReader"
+                        "root": "data"
                     },
                     "designerId": "84c9270c-599b-4349-aab1-978aa0607fb3"
                 }

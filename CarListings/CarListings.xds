@@ -1,68 +1,34 @@
 {
     "name": "CarListings",
     "settings": {
-        "urlPrefix": "http://localhost/sandbox/CarListings/",
+        "cmd": {
+            "license": "commercial",
+            "cmdVersion": "4.0.1.28",
+            "frameworkVersion": "4.1.1"
+        },
+        "urlPrefix": "http://localhost/CarListings/",
         "spacesToIndent": 4,
         "exportPath": "",
         "sdkPath": "",
         "lineEnding": "LF",
         "genTimestamps": false,
-        "cacheBust": false
+        "cacheBust": false,
+        "canvasControls": {
+            "viewportSize": {
+                "name": "Auto Expand",
+                "builtIn": true,
+                "height": null,
+                "width": null
+            }
+        },
+        "buildShouldOverwriteIndex": true,
+        "generateArchitectVersion": true
     },
-    "xdsVersion": "2.2.0",
-    "xdsBuild": 894,
+    "xdsVersion": "3.0.0",
+    "xdsBuild": 0,
     "schemaVersion": 1,
-    "upgradeVersion": 210000000499,
+    "upgradeVersion": 300000000001,
     "framework": "ext41",
-    "topInstanceFileMap": {
-        "fa6a13d2-be29-4bce-9bf8-7087e3a9c6ba": {
-            "paths": [
-                "metadata/view/CarListings",
-                "app/view/override/CarListings.js",
-                "app/view/CarListings.js",
-                "app/view/Viewport.js"
-            ],
-            "className": "CarListings"
-        },
-        "67363d08-999e-4648-b11d-5d9fe657da91": {
-            "paths": [
-                "metadata/resource/Library"
-            ],
-            "className": "Library"
-        },
-        "0315c038-557a-4e0a-8263-df261c02f018": {
-            "paths": [
-                "metadata/store/CarDataStore",
-                "app/store/override/CarDataStore.js",
-                "app/store/CarDataStore.js"
-            ],
-            "className": "CarDataStore"
-        },
-        "44284846-393f-4336-9e37-fe0ed78e1e2a": {
-            "paths": [
-                "metadata/model/CarData",
-                "app/model/override/CarData.js",
-                "app/model/CarData.js"
-            ],
-            "className": "CarData"
-        },
-        "46782a72-f446-46f1-9b63-5a9f1dc44a0a": {
-            "paths": [
-                "metadata/store/CarChartStore",
-                "app/store/override/CarChartStore.js",
-                "app/store/CarChartStore.js"
-            ],
-            "className": "CarChartStore"
-        },
-        "5facafe4-e1fe-49da-a9f1-20529581bc87": {
-            "paths": [
-                "metadata/model/CarChart",
-                "app/model/override/CarChart.js",
-                "app/model/CarChart.js"
-            ],
-            "className": "CarChart"
-        }
-    },
     "viewOrderMap": {
         "view": [
             "fa6a13d2-be29-4bce-9bf8-7087e3a9c6ba"

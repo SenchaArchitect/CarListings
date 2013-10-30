@@ -18,8 +18,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "manufacturer",
-                "designer|userClassName": "MyField"
+                "name": "manufacturer"
             },
             "designerId": "1f2a373a-5542-45c1-a073-a19e2f24e573"
         },
@@ -31,8 +30,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "model",
-                "designer|userClassName": "MyField1"
+                "name": "model"
             },
             "designerId": "9457f1d9-cb15-48a2-929e-aba43749eb39"
         },
@@ -44,8 +42,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "price",
-                "designer|userClassName": "MyField2"
+                "name": "price"
             },
             "designerId": "0bdbd53c-a3a3-42e5-af2c-6b664d2f1fa8"
         },
@@ -57,8 +54,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "wiki",
-                "designer|userClassName": "MyField3"
+                "name": "wiki"
             },
             "designerId": "5772beaa-658d-478c-a8f4-a485e9a4f30e"
         },
@@ -70,8 +66,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "img",
-                "designer|userClassName": "MyField5"
+                "name": "img"
             },
             "designerId": "4a74bdf3-05c6-48b4-871c-159e60950faf"
         },
@@ -83,8 +78,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "quality",
-                "designer|userClassName": "MyField4"
+                "name": "quality"
             },
             "designerId": "0846e5f8-7b72-434a-a64c-cb3f88af72d1"
         }

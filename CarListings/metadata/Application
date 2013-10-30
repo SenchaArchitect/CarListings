@@ -10,15 +10,14 @@
             "CarData",
             "CarChart"
         ],
+        "name": "MyApp",
         "stores": [
             "CarDataStore",
             "CarChartStore"
         ],
         "views": [
             "CarListings"
-        ],
-        "autoCreateViewport": true,
-        "name": "MyApp"
+        ]
     },
     "designerId": "application"
 }

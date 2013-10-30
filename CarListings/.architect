@@ -137,5 +137,6 @@
     "codeState": {
         "topInstance": null
     },
-    "editMode": "design"
+    "editMode": "design",
+    "userSettings": {}
 }
