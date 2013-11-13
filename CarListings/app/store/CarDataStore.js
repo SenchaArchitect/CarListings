@@ -17,9 +17,9 @@ Ext.define('MyApp.store.CarDataStore', {
     extend: 'Ext.data.Store',
 
     requires: [
+        'MyApp.model.CarData',
         'Ext.data.proxy.Ajax',
-        'Ext.data.reader.Json',
-        'MyApp.model.CarData'
+        'Ext.data.reader.Json'
     ],
 
     constructor: function(cfg) {

@@ -3,8 +3,8 @@
     "settings": {
         "cmd": {
             "license": "commercial",
-            "cmdVersion": "4.0.1.28",
-            "frameworkVersion": "4.1.1"
+            "cmdVersion": "4.0.1.45",
+            "frameworkVersion": "4.2.1.883"
         },
         "urlPrefix": "http://localhost/CarListings/",
         "spacesToIndent": 4,
@@ -25,9 +25,9 @@
         "generateArchitectVersion": true
     },
     "xdsVersion": "3.0.0",
-    "xdsBuild": 0,
+    "xdsBuild": 1337,
     "schemaVersion": 1,
-    "upgradeVersion": 300000000001,
+    "upgradeVersion": 300000000003,
     "framework": "ext42",
     "viewOrderMap": {
         "view": [

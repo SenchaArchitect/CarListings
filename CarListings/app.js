@@ -34,7 +34,6 @@ Ext.application({
     name: 'MyApp',
 
     launch: function() {
-
         Ext.create('MyApp.view.CarListings', {renderTo: Ext.getBody()});
     }
 
